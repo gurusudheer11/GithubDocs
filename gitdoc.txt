@@ -1,0 +1,10 @@
+
+Git-Rebase
+===========
+https://stackoverflow.com/questions/15727597/git-how-to-rebase-and-squash-commits-from-branch-to-master
+
+https://help.github.com/articles/about-pull-request-merges/
+
+https://stackoverflow.com/questions/2427238/in-git-what-is-the-difference-between-merge-squash-and-rebase
+
+https://stackoverflow.com/questions/2427238/in-git-what-is-the-difference-between-merge-squash-and-rebase/2427520
