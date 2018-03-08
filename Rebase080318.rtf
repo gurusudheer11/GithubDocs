@@ -1,0 +1,522 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red47\green180\blue29;
+\red159\green160\blue28;\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c20238\c73898\c14947;
+\cssrgb\c68468\c68012\c14208;\cssrgb\c76409\c21698\c12524;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17140\viewh17240\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Thu Mar  8 10:49:23 on console\
+Mac:~ Guru$ cd /Users/Guru/Documents/LegrandAmbient/27-Feb-2018/lightingios \
+Mac:lightingios Guru$ git branch\
+  feature-3.1-support\
+* \cf4 feature-ambient\cf2 \
+  lnt_Artik_Splash_Design\
+Mac:lightingios Guru$ git log\
+\cf5 commit d407f801c1e77f39044fcfbf75fca4b0dce9cd8a\cf2 \
+Merge: 17e2bd9 4de76a9\
+Author: Peter Paugh <ppaugh@chariotsolutions.com>\
+Date:   Mon Mar 5 13:46:01 2018 -0500\
+\
+    Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+    \
+    62909 new ambient application icon\
+\
+\cf5 commit 4de76a9b640bee04ee16ad31dcec9cae4510641c\cf2 \
+Author: Peter <ppaugh@chariotsolutions.com>\
+Date:   Tue Feb 27 13:40:52 2018 -0500\
+\
+    62909 new ambient application icon\
+\
+\cf5 commit 17e2bd9094e318a2af949e55173ee8bb5ab5021a\cf2 \
+Merge: 31515b9 d991833\
+Author: apple-ihack-geek <benjamin.kier@legrand.us>\
+Date:   Fri Mar 2 13:36:57 2018 -0500\
+\
+    Merge pull request #577 from nuvo-legrand/feature-ambient-update\
+    \
+    Feature ambient update - Bringing in Xcode 9 changes and RFLC 3.1 changes\
+\
+\cf5 commit d9918330790eb468910ddc5b80301f0bf56557cd\cf2 \
+Author: Benjamin Kier <benjamin.kier@legrand.us>\
+Date:   Fri Mar 2 09:12:59 2018 -0500\
+\
+    ambientlighting-Info.plist : Bump build and version to 0.0.4\
+\
+\cf5 commit 855c84ae912a28d363ac2575a6c6e03bb5f44f85\cf2 \
+Author: Benjamin Kier <benjamin.kier@legrand.us>\
+Date:   Fri Mar 2 09:01:23 2018 -0500\
+\
+    project.pbxproj : Add RFLCSettingsTechnicalSupportviewController to ambient target.\
+\
+\cf5 commit b01a057b2922ba2d930e893e9ec0e13924273214\cf2 \
+Author: Benjamin Kier <benjamin.kier@legrand.us>\
+Date:   Fri Mar 2 08:49:05 2018 -0500\
+\
+    Fix the part of gateway onboarding that worked before merge.  Endpoint onboarding is still broken in whatever way it was broken before.  Wifi endpoint onboarding is unknown because there is no hardware to test with.\
+\
+Mac:lightingios Guru$ git rebase \
+Cannot rebase: You have unstaged changes.\
+Please commit or stash them.\
+Mac:lightingios Guru$ git stash\
+Saved working directory and index state WIP on feature-ambient: d407f80 Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+HEAD is now at d407f80 Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+Mac:lightingios Guru$ git pull\
+Enter passphrase for key '/Users/Guru/.ssh/id_rsa': \
+Already up-to-date.\
+Mac:lightingios Guru$ git stash pop\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf6 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf6 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf6 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf6 Lighting.xcworkspace/xcshareddata/\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Dropped refs/stash@\{0\} (789db5295df1eeacb9508e142887eebaa4c0f2a1)\
+Mac:lightingios Guru$ git stash list\
+Mac:lightingios Guru$ git status\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf6 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf6 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf6 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf6 Lighting.xcworkspace/xcshareddata/\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git branch\
+  feature-3.1-support\
+* \cf4 feature-ambient\cf2 \
+  lnt_Artik_Splash_Design\
+Mac:lightingios Guru$ git checkout lnt_Artik_Splash_Design\
+error: Your local changes to the following files would be overwritten by checkout:\
+	Lighting/ArtikWelcomeViewController.m\
+	Lighting/Base.lproj/ArtikAccount.storyboard\
+	Lighting/es.lproj/ArtikAccount.strings\
+	Lighting/fr.lproj/ArtikAccount.strings\
+Please, commit your changes or stash them before you can switch branches.\
+Aborting\
+Mac:lightingios Guru$ git add Lighting/ArtikWelcomeViewController.m Lighting/Base.lproj/ArtikAccount.storyboard Lighting/es.lproj/ArtikAccount.strings Lighting/fr.lproj/ArtikAccount.strings\
+Mac:lightingios Guru$ git status\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf6 Lighting.xcworkspace/xcshareddata/\cf2 \
+\
+Mac:lightingios Guru$ git rm --cached Lighting.xcworkspace/xcshareddata/\
+fatal: pathspec 'Lighting.xcworkspace/xcshareddata/' did not match any files\
+Mac:lightingios Guru$ git rm --cached -d Lighting.xcworkspace/xcshareddata/\
+error: unknown switch `d'\
+usage: git rm [<options>] [--] <file>...\
+\
+    -n, --dry-run         dry run\
+    -q, --quiet           do not list removed files\
+    --cached              only remove from the index\
+    -f, --force           override the up-to-date check\
+    -r                    allow recursive removal\
+    --ignore-unmatch      exit with a zero status even if nothing matched\
+\
+Mac:lightingios Guru$ git -d  --cached Lighting.xcworkspace/xcshareddata/\
+Unknown option: -d\
+usage: git [--version] [--help] [-C <path>] [-c name=value]\
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]\
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\
+           <command> [<args>]\
+Mac:lightingios Guru$ git clean -f -d\
+Removing Lighting.xcworkspace/xcshareddata/\
+Removing Resources/\
+Mac:lightingios Guru$ git status\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Mac:lightingios Guru$ git branch\
+  feature-3.1-support\
+* \cf4 feature-ambient\cf2 \
+  lnt_Artik_Splash_Design\
+Mac:lightingios Guru$ git checkout lnt_Artik_Splash_Design\
+error: Your local changes to the following files would be overwritten by checkout:\
+	Lighting/ArtikWelcomeViewController.m\
+	Lighting/Base.lproj/ArtikAccount.storyboard\
+Please, commit your changes or stash them before you can switch branches.\
+Aborting\
+Mac:lightingios Guru$ git stash\
+Saved working directory and index state WIP on feature-ambient: d407f80 Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+HEAD is now at d407f80 Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+Mac:lightingios Guru$ git checkout lnt_Artik_Splash_Design\
+M	external/lightingcommon\
+Switched to branch 'lnt_Artik_Splash_Design'\
+Mac:lightingios Guru$ git branch\
+  feature-3.1-support\
+  feature-ambient\
+* \cf4 lnt_Artik_Splash_Design\cf2 \
+Mac:lightingios Guru$ git rebase feature-ambient\
+First, rewinding head to replay your work on top of it...\
+Applying: Modified Artik splash screen and added Font files\
+Using index info to reconstruct a base tree...\
+M	Lighting.xcodeproj/project.pbxproj\
+M	Lighting/Base.lproj/ArtikAccount.storyboard\
+.git/rebase-apply/patch:344: trailing whitespace.\
+    \
+.git/rebase-apply/patch:345: trailing whitespace.\
+    \
+.git/rebase-apply/patch:349: trailing whitespace.\
+    \
+warning: 3 lines add whitespace errors.\
+Falling back to patching base and 3-way merge...\
+Auto-merging Lighting/Base.lproj/ArtikAccount.storyboard\
+CONFLICT (content): Merge conflict in Lighting/Base.lproj/ArtikAccount.storyboard\
+Auto-merging Lighting.xcodeproj/project.pbxproj\
+CONFLICT (content): Merge conflict in Lighting.xcodeproj/project.pbxproj\
+error: Failed to merge in the changes.\
+Patch failed at 0001 Modified Artik splash screen and added Font files\
+The copy of the patch that failed is found in: .git/rebase-apply/patch\
+\
+When you have resolved this problem, run "git rebase --continue".\
+If you prefer to skip this patch, run "git rebase --skip" instead.\
+To check out the original branch and stop rebasing, run "git rebase --abort".\
+\
+Mac:lightingios Guru$ git rebase --skip\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+nothing to commit, working directory clean\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+nothing to commit, working directory clean\
+Mac:lightingios Guru$ git reflog\
+\cf5 d407f80\cf2  HEAD@\{0\}: rebase finished: returning to refs/heads/lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{1\}: rebase: checkout feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{2\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{3\}: checkout: moving from lnt_Artik_Splash_Design to feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{4\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{5\}: pull --ff-only origin feature-ambient: Fast-forward\
+\cf5 d416415\cf2  HEAD@\{6\}: checkout: moving from lnt_Artik_Splash_Design to feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{7\}: commit: Modified Artik splash screen and added Font files\
+\cf5 d416415\cf2  HEAD@\{8\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d416415\cf2  HEAD@\{9\}: checkout: moving from feature-3.1-support to feature-ambient\
+\cf5 50ba751\cf2  HEAD@\{10\}: clone: from git@github.com:nuvo-legrand/lightingios.git\
+Mac:lightingios Guru$ git reset --hard HEAD@\{8\}\
+HEAD is now at d416415 Merge pull request #573 from nuvo-legrand/mak-t349-ble-registration\
+Mac:lightingios Guru$ git branch\
+  feature-3.1-support\
+  feature-ambient\
+* \cf4 lnt_Artik_Splash_Design\cf2 \
+Mac:lightingios Guru$ git rebase feature-ambient\
+Cannot rebase: You have unstaged changes.\
+Please commit or stash them.\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git clean -f -d\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git checkout -- external/lightingcommon\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git checkout --external/lightingcommon\
+error: unknown option `external/lightingcommon'\
+usage: git checkout [<options>] <branch>\
+   or: git checkout [<options>] [<branch>] -- <file>...\
+\
+    -q, --quiet           suppress progress reporting\
+    -b <branch>           create and checkout a new branch\
+    -B <branch>           create/reset and checkout a branch\
+    -l                    create reflog for new branch\
+    --detach              detach the HEAD at named commit\
+    -t, --track           set upstream info for new branch\
+    --orphan <new-branch>\
+                          new unparented branch\
+    -2, --ours            checkout our version for unmerged files\
+    -3, --theirs          checkout their version for unmerged files\
+    -f, --force           force checkout (throw away local modifications)\
+    -m, --merge           perform a 3-way merge with the new branch\
+    --overwrite-ignore    update ignored files (default)\
+    --conflict <style>    conflict style (merge or diff3)\
+    -p, --patch           select hunks interactively\
+    --ignore-skip-worktree-bits\
+                          do not limit pathspecs to sparse entries only\
+    --ignore-other-worktrees\
+                          do not check if another worktree is holding the given ref\
+    --progress            force progress reporting\
+\
+Mac:lightingios Guru$ git checkout -- external/lightingcommon\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git stash\
+No local changes to save\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   external/lightingcommon\cf2  (new commits)\
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mac:lightingios Guru$ git add external/lightingcommon\
+Mac:lightingios Guru$ git stash\
+No local changes to save\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   external/lightingcommon\cf2 \
+\
+Mac:lightingios Guru$ git stash\
+No local changes to save\
+Mac:lightingios Guru$ git checkout -b LntSplashScreen\
+M	external/lightingcommon\
+Switched to a new branch 'LntSplashScreen'\
+Mac:lightingios Guru$ git status\
+On branch LntSplashScreen\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   external/lightingcommon\cf2 \
+\
+Mac:lightingios Guru$ git checkout lnt_Artik_Splash_Design\
+M	external/lightingcommon\
+Switched to branch 'lnt_Artik_Splash_Design'\
+Mac:lightingios Guru$ git reflog\
+\cf5 d416415\cf2  HEAD@\{0\}: checkout: moving from LntSplashScreen to lnt_Artik_Splash_Design\
+\cf5 d416415\cf2  HEAD@\{1\}: checkout: moving from lnt_Artik_Splash_Design to LntSplashScreen\
+\cf5 d416415\cf2  HEAD@\{2\}: reset: moving to HEAD@\{8\}\
+\cf5 d407f80\cf2  HEAD@\{3\}: rebase finished: returning to refs/heads/lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{4\}: rebase: checkout feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{5\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{6\}: checkout: moving from lnt_Artik_Splash_Design to feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{7\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d407f80\cf2  HEAD@\{8\}: pull --ff-only origin feature-ambient: Fast-forward\
+\cf5 d416415\cf2  HEAD@\{9\}: checkout: moving from lnt_Artik_Splash_Design to feature-ambient\
+\cf5 f3b8c66\cf2  HEAD@\{10\}: commit: Modified Artik splash screen and added Font files\
+\cf5 d416415\cf2  HEAD@\{11\}: checkout: moving from feature-ambient to lnt_Artik_Splash_Design\
+\cf5 d416415\cf2  HEAD@\{12\}: checkout: moving from feature-3.1-support to feature-ambient\
+\cf5 50ba751\cf2  HEAD@\{13\}: clone: from git@github.com:nuvo-legrand/lightingios.git\
+Mac:lightingios Guru$ git branch\
+  LntSplashScreen\
+  feature-3.1-support\
+  feature-ambient\
+* \cf4 lnt_Artik_Splash_Design\cf2 \
+Mac:lightingios Guru$ git rebase feature-ambient\
+First, rewinding head to replay your work on top of it...\
+Fast-forwarded lnt_Artik_Splash_Design to feature-ambient.\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+nothing to commit, working directory clean\
+Mac:lightingios Guru$ git checkout feature-ambient\
+Switched to branch 'feature-ambient'\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Mac:lightingios Guru$ git status\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+nothing to commit, working directory clean\
+Mac:lightingios Guru$ git stash list\
+stash@\{0\}: WIP on feature-ambient: d407f80 Merge pull request #576 from nuvo-legrand/psp-62909-new-ambient-app-icon\
+Mac:lightingios Guru$ git stash pop\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf6 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf6 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf6 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Dropped refs/stash@\{0\} (d59203044de2770726e128cba363893126867293)\
+Mac:lightingios Guru$ git add Lighting/ArtikWelcomeViewController.m Lighting/Base.lproj/ArtikAccount.storyboard Lighting/es.lproj/ArtikAccount.strings Lighting/fr.lproj/ArtikAccount.strings\
+Mac:lightingios Guru$ git status\
+On branch feature-ambient\
+Your branch is up-to-date with 'origin/feature-ambient'.\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Mac:lightingios Guru$ git checkout lnt_Artik_Splash_Design\
+M	Lighting/ArtikWelcomeViewController.m\
+M	Lighting/Base.lproj/ArtikAccount.storyboard\
+M	Lighting/es.lproj/ArtikAccount.strings\
+M	Lighting/fr.lproj/ArtikAccount.strings\
+Switched to branch 'lnt_Artik_Splash_Design'\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf6 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf6 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+\
+Mac:lightingios Guru$ git add .\
+Mac:lightingios Guru$ git status\
+On branch lnt_Artik_Splash_Design\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf4 modified:   Lighting/ArtikWelcomeViewController.m\cf2 \
+	\cf4 modified:   Lighting/Base.lproj/ArtikAccount.storyboard\cf2 \
+	\cf4 modified:   Lighting/es.lproj/ArtikAccount.strings\cf2 \
+	\cf4 modified:   Lighting/fr.lproj/ArtikAccount.strings\cf2 \
+\
+Mac:lightingios Guru$ git commit -m "Removed unwanted Robotic fonts files and project file changes."\
+[lnt_Artik_Splash_Design 4d34da8] Removed unwanted Robotic fonts files and project file changes.\
+ 4 files changed, 190 insertions(+), 143 deletions(-)\
+ rewrite Lighting/es.lproj/ArtikAccount.strings (94%)\
+ rewrite Lighting/fr.lproj/ArtikAccount.strings (81%)\
+Mac:lightingios Guru$ git branch\
+  LntSplashScreen\
+  feature-3.1-support\
+  feature-ambient\
+* \cf4 lnt_Artik_Splash_Design\cf2 \
+Mac:lightingios Guru$ git push origin lnt_Artik_Splash_Design\
+Enter passphrase for key '/Users/Guru/.ssh/id_rsa': \
+To git@github.com:nuvo-legrand/lightingios.git\
+ ! [rejected]        lnt_Artik_Splash_Design -> lnt_Artik_Splash_Design (non-fast-forward)\
+error: failed to push some refs to 'git@github.com:nuvo-legrand/lightingios.git'\
+hint: Updates were rejected because the tip of your current branch is behind\
+hint: its remote counterpart. Integrate the remote changes (e.g.\
+hint: 'git pull ...') before pushing again.\
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\
+Mac:lightingios Guru$ git push origin lnt_Artik_Splash_Design --force\
+Enter passphrase for key '/Users/Guru/.ssh/id_rsa': \
+Enter passphrase for key '/Users/Guru/.ssh/id_rsa': \
+Counting objects: 9, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (9/9), done.\
+Writing objects: 100% (9/9), 4.20 KiB | 0 bytes/s, done.\
+Total 9 (delta 7), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.\
+To git@github.com:nuvo-legrand/lightingios.git\
+ + f3b8c66...4d34da8 lnt_Artik_Splash_Design -> lnt_Artik_Splash_Design (forced update)\
+Mac:lightingios Guru$ \
+}
